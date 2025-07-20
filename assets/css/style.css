@@ -593,7 +593,7 @@ body.nav-active {
 
 .nav-open-btn {
   font-size: 3.5rem;
-  color: var(--gunmetal);
+  color: white;
 }
 
 .navbar {
@@ -650,8 +650,11 @@ body.nav-active {
 .navbar-link {
   font-weight: var(--fw-700);
   padding-block: 6px;
+  color: white;
 }
-
+.navbar-link:hover {
+  color: #ffbf35;
+}
 .contact-link {
   transition: var(--transition-1);
 }
@@ -736,11 +739,16 @@ body.nav-active {
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
-/* From Uiverse.io by adamgiebl */
+
 .WorksAndContact {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+@media (max-width: 768px) {
+  .WorksAndContact {
+    justify-content: center;
+  }
 }
 .send {
   font-family: inherit;
