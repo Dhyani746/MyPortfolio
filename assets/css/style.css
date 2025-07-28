@@ -533,6 +533,7 @@ body.nav-active {
   bottom: 0;
   box-shadow: 0px 0 0 0 white;
   transition: all 2s ease;
+  /* background-color: red; */
 }
 
 .dragon:hover:after {
@@ -552,12 +553,6 @@ body.nav-active {
   color: #ffbf35;
   transition: all 2s ease;
 }
-
-.dragon:hover span {
-  color: white;
-  color: black;
-}
-
 .dragon:before {
   content: "";
   position: absolute;
@@ -573,7 +568,7 @@ body.nav-active {
 .dragon:hover:before {
   width: 100%;
 }
-.dragon:hover:h2 {
+.dragon:hover {
   color: black;
 }
 @keyframes slideIn {
@@ -749,7 +744,11 @@ body.nav-active {
   .WorksAndContact {
     justify-content: center;
   }
+  .WorksAndContact .send {
+    font-size: 1.9rem;
+  }
 }
+
 .send {
   font-family: inherit;
   font-size: 20px;
